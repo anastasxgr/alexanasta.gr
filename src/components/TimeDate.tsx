@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
-
+import { CSSProperties } from "react";
 
 function TimeDate() {
     const [time, setTime] = useState(new Date());
+
+
+    const style: CSSProperties = {
+        width: "100px",
+        position: "absolute",
+        right: "0",
+        color: "#fff"
+    }
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -18,7 +26,7 @@ function TimeDate() {
 
     return (
 
-        <div className="time">{formatTime(time)}</div>
+        <div style={style}>{formatTime(time)}</div>
 
     );
 }

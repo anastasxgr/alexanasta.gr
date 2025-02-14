@@ -4,10 +4,17 @@ import { useDispatch } from "react-redux";
 import { useCommands } from "../../hooks/useCommands";
 
 
+import { RootState } from "../../_store";
+import { useSelector } from "react-redux";
+
 
 import Draggable from "react-draggable";
 
 const Terminal = () => {
+
+
+    const isOpen = useSelector((state: RootState) => state.apps.terminal);
+
     const [history, setHistory] = useState<string[]>([]);
     const [command, setCommand] = useState("");
     const dispatch = useDispatch();
@@ -35,6 +42,10 @@ const Terminal = () => {
         }
     };
 
+
+    if (!isOpen) {
+        return
+    }
 
     return (
         <Draggable nodeRef={terminal} cancel=".content">
