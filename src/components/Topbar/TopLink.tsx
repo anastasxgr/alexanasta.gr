@@ -23,7 +23,6 @@ function TopLink({ txt, click }: LinkProps) {
 
     }
 
-
     const hover = () => {
         setIsHover(true)
     }

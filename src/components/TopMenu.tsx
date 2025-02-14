@@ -2,7 +2,7 @@
 import { CSSProperties } from "react"
 import { useDispatch } from "react-redux";
 
-import { openTerminal } from "../_store/reducers/AppsSlice";
+import { openTerminal } from "../_store/reducers/appsSlice";
 //components
 import TopLink from "./Topbar/TopLink";
 

@@ -1,7 +1,7 @@
 import ScreenManager from "./components/managers/ScreenManager"
 
 import useNetworkStatus from "./hooks/useNetworkStatus"
-import StatusModal from "./components/Modals/StatusModal"
+import StatusModal from "./components/modals/StatusModal"
 
 
 function App() {

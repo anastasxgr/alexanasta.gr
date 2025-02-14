@@ -4,6 +4,7 @@ import Topbar from "../Topbar";
 
 // available apps 
 import Terminal from "../apps/Terminal";
+import IconsContainer from "../IconsContainer";
 
 
 export default function DesktopScreen() {
@@ -11,6 +12,7 @@ export default function DesktopScreen() {
         <div className="desktop">
             <Background />
             <Topbar />
+            <IconsContainer />
             <Terminal />
         </div>
     );
