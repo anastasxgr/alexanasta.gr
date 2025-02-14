@@ -1,0 +1,38 @@
+.shuttedown {
+    min-width: 100dvw;
+    min-height: 100dvh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+
+    .texts {
+        color: #fff;
+        text-align: center;
+
+        h1 {
+            font-weight: 500;
+        }
+
+        h2 {
+            font-weight: 300;
+        }
+    }
+
+    .btnPower {
+        width: 100px;
+        height: 100px;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

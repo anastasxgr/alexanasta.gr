@@ -1,0 +1,16 @@
+.desktop {
+
+    min-width: 100dvw;
+    min-height: 100dvh;
+    background-color: #071c39;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+    gap: 4rem;
+    overflow: hidden;
+}

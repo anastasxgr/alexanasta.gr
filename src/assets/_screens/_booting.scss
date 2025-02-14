@@ -1,0 +1,80 @@
+.booting {
+    min-width: 100dvw;
+    min-height: 100dvh;
+    background: linear-gradient(77deg,
+            #060a11,
+            #121223,
+            #030521,
+            #2a69cc);
+    background-size: 300% 300%;
+    animation: bg-animation 25s ease infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.data {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    bottom: 20%;
+}
+
+.loader {
+    --c: no-repeat linear-gradient(orange 0 0);
+    background:
+        var(--c), var(--c), var(--c),
+        var(--c), var(--c), var(--c),
+        var(--c), var(--c), var(--c);
+    background-size: 16px 16px;
+    animation:
+        l32-1 1s infinite,
+        l32-2 1s infinite;
+}
+
+@keyframes l32-1 {
+
+    0%,
+    100% {
+        width: 45px;
+        height: 45px
+    }
+
+    35%,
+    65% {
+        width: 65px;
+        height: 65px
+    }
+}
+
+@keyframes l32-2 {
+
+    0%,
+    40% {
+        background-position: 0 0, 0 50%, 0 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0, 50% 0, 50% 50%
+    }
+
+    60%,
+    100% {
+        background-position: 0 50%, 0 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0, 50% 0, 0 0, 50% 50%
+    }
+}
